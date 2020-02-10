@@ -14,28 +14,20 @@ namespace LoginScreenReal
     {
 
         static public string rightUserName = "Bob";
-        public static string rightPassword = "1234";
-        string userName;
-        string passWord;
+        static public string rightPassword = "1234";
+
+        UserControl1 uc = new UserControl1();
+        
         public Form1()
         {
             InitializeComponent();
-            
+            this.Controls.Add(uc);
         }
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            userName = userInput.Text;
-            passWord = passInput.Text;
-
-            if (userName == rightUserName && passWord == rightPassword)
-            {
-                errorLabel.Visible = false;
-            }
-            else 
-            {
-                errorLabel.Visible = true;
-            }
+            
+            
         }
     }
 }

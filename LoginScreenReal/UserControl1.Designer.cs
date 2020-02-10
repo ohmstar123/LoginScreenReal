@@ -28,32 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.errorLabel = new System.Windows.Forms.Label();
-            this.submitButton = new System.Windows.Forms.Button();
             this.passInput = new System.Windows.Forms.TextBox();
-            this.userInput = new System.Windows.Forms.TextBox();
             this.passLabel = new System.Windows.Forms.Label();
+            this.userInput = new System.Windows.Forms.TextBox();
             this.userLabel = new System.Windows.Forms.Label();
+            this.submitButton = new System.Windows.Forms.Button();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // errorLabel
-            // 
-            this.errorLabel.AutoSize = true;
-            this.errorLabel.Location = new System.Drawing.Point(96, 388);
-            this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(304, 20);
-            this.errorLabel.TabIndex = 13;
-            this.errorLabel.Text = "You got the wrong username or password";
-            this.errorLabel.Visible = false;
-            // 
-            // submitButton
-            // 
-            this.submitButton.Location = new System.Drawing.Point(581, 353);
-            this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(162, 90);
-            this.submitButton.TabIndex = 12;
-            this.submitButton.Text = "Submit";
-            this.submitButton.UseVisualStyleBackColor = true;
             // 
             // passInput
             // 
@@ -61,13 +42,6 @@
             this.passInput.Name = "passInput";
             this.passInput.Size = new System.Drawing.Size(140, 26);
             this.passInput.TabIndex = 11;
-            // 
-            // userInput
-            // 
-            this.userInput.Location = new System.Drawing.Point(253, 126);
-            this.userInput.Name = "userInput";
-            this.userInput.Size = new System.Drawing.Size(140, 26);
-            this.userInput.TabIndex = 10;
             // 
             // passLabel
             // 
@@ -80,6 +54,13 @@
             this.passLabel.Text = "Password:";
             this.passLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // userInput
+            // 
+            this.userInput.Location = new System.Drawing.Point(253, 126);
+            this.userInput.Name = "userInput";
+            this.userInput.Size = new System.Drawing.Size(140, 26);
+            this.userInput.TabIndex = 10;
+            // 
             // userLabel
             // 
             this.userLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -90,6 +71,26 @@
             this.userLabel.TabIndex = 8;
             this.userLabel.Text = "Username:";
             this.userLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // submitButton
+            // 
+            this.submitButton.Location = new System.Drawing.Point(581, 353);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(162, 90);
+            this.submitButton.TabIndex = 12;
+            this.submitButton.Text = "Submit";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
+            // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Location = new System.Drawing.Point(96, 388);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(304, 20);
+            this.errorLabel.TabIndex = 13;
+            this.errorLabel.Text = "You got the wrong username or password";
+            this.errorLabel.Visible = false;
             // 
             // UserControl1
             // 
@@ -110,11 +111,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label errorLabel;
-        private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.TextBox passInput;
-        private System.Windows.Forms.TextBox userInput;
         private System.Windows.Forms.Label passLabel;
+        private System.Windows.Forms.TextBox userInput;
         private System.Windows.Forms.Label userLabel;
+        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.Label errorLabel;
     }
 }
